@@ -12,9 +12,9 @@
 </head>
 <body>
 <header class="hero">
-  <div class="wrap hero-grid">
+  <div class="wrap">
     <div class="hero-text">
-      <p class="brand">Taravi</p>
+      <p class="brand"><svg class="mark" viewBox="0 0 40 40" width="34" height="34" aria-hidden="true"><g stroke="#c9a54a" stroke-width="1.2" fill="none" opacity=".8"><path d="M6 30 L15 18 L24 23 L34 8"/><path d="M15 18 L12 7"/></g><g fill="#c9a54a"><circle cx="6" cy="30" r="2"/><circle cx="15" cy="18" r="2.4"/><circle cx="24" cy="23" r="1.8"/><circle cx="34" cy="8" r="2.4"/><circle cx="12" cy="7" r="1.6"/></g></svg>Taravi</p>
       <h1>Plain, trusted answers to life's big questions.</h1>
       <p class="subline">Clear, kind answers from your own chart.</p>
       <p class="intro">Ask about your life in your own words. Taravi calculates your Vedic birth chart and explains it in plain English. Every insight comes from your real chart.</p>
@@ -23,7 +23,9 @@
         <p class="free">Free to start.</p>
       </div>
     </div>
-    <div class="app-window hero-window"><img src="images/ask.jpg" width="1076" height="880" alt="Taravi Ask screen answering a question about marriage"></div>
+    <div class="hero-shot">
+      <div class="browser"><div class="bar" aria-hidden="true"><i></i><i></i><i></i></div><img src="images/home.jpg" width="1800" height="909" alt="Taravi Home screen with chart summary, today's life areas and the Ask Taravi panel"></div>
+    </div>
   </div>
 </header>
 
@@ -31,7 +33,7 @@
 <section class="wrap" id="how">
   <h2>How it works</h2>
   <ol class="steps">
-    <li><span class="num">1</span><div><h3>Add your birth details</h3><p>Date, time and place of birth.</p></div></li>
+    <li><span class="num">1</span><div><h3>Add your birth details</h3><p>Date, time and place of birth.</p><img class="step-shot" src="images/birth-details.jpg" width="1400" height="1056" loading="lazy" alt="Taravi birth details form asking for date, time and place of birth"></div></li>
     <li><span class="num">2</span><div><h3>Code calculates your chart</h3><p>Every planet, house and timing period is worked out by fixed calculations.</p></div></li>
     <li><span class="num">3</span><div><h3>AI explains it in plain words</h3><p>AI explains it in plain words, and every answer is checked against your chart.</p></div></li>
   </ol>
@@ -40,23 +42,34 @@
 <section class="band" id="features">
   <div class="wrap">
     <h2>What you can do</h2>
-    <div class="grid">
-      <article class="card"><h3>Ask</h3><p>Ask about your life in your own words and get a clear, kind answer from your chart.</p></article>
-      <article class="card"><h3>My Life</h3><p>See how each area of your life is going today, this week and this year, with a simple rating.</p></article>
-      <article class="card"><h3>Calendar</h3><p>A month view that shows which days look supportive.</p></article>
-      <article class="card"><h3>Compatibility</h3><p>Compare two birth charts and see how they fit.</p></article>
-      <article class="card"><h3>Morning card</h3><p>A short line for your day, every morning on Home.</p></article>
-      <article class="card"><h3>Evening card</h3><p>After 6 pm, a gentle prompt to end your day.</p></article>
-      <article class="card"><h3>Journal check-in (saved on your device)</h3><p>Note how you feel and what went well. Entries stay in your browser.</p></article>
-      <article class="card"><h3>Calm minute</h3><p>A 60-second guided breathing pause.</p></article>
+    <div class="feature">
+      <div class="feature-text"><h3>Ask</h3><p>Ask about your life in your own words and get a clear, kind answer from your chart.</p></div>
+      <div class="shots two"><div class="window"><div class="bar" aria-hidden="true"><i></i><i></i><i></i></div><img src="images/ask.jpg" width="1076" height="880" loading="lazy" alt="Taravi Ask screen answering a question about marriage"></div><div class="window"><div class="bar" aria-hidden="true"><i></i><i></i><i></i></div><img src="images/ask-start.jpg" width="1374" height="1586" loading="lazy" alt="Taravi Ask panel with suggested questions to try"></div></div>
+    </div>
+    <div class="feature flip">
+      <div class="feature-text"><h3>My Life</h3><p>See how each area of your life is going today, this week and this year, with a simple rating.</p></div>
+      <div class="shots"><div class="window"><div class="bar" aria-hidden="true"><i></i><i></i><i></i></div><img src="images/my-life.jpg" width="1400" height="1416" loading="lazy" alt="Taravi My Life screen showing today's overall support and strongest life areas"></div></div>
+    </div>
+    <div class="feature">
+      <div class="feature-text"><h3>Calendar</h3><p>A month view that shows which days look supportive.</p>
+        <ul class="legend"><li><span class="sw strong"></span>Strong</li><li><span class="sw support"></span>Supportive</li><li><span class="sw quiet"></span>Quieter</li></ul></div>
+      <div class="shots"><div class="window"><div class="bar" aria-hidden="true"><i></i><i></i><i></i></div><img src="images/calendar.jpg" width="1290" height="1166" loading="lazy" alt="Taravi Calendar showing an October month view with day ratings and markers"></div></div>
+    </div>
+    <div class="feature flip">
+      <div class="feature-text"><h3>Journal check-in (saved on your device)</h3><p>Note how you feel and what went well. Entries stay in your browser.</p></div>
+      <div class="shots"><div class="window"><div class="bar" aria-hidden="true"><i></i><i></i><i></i></div><img src="images/journal.jpg" width="1400" height="950" loading="lazy" alt="Taravi Journal daily check-in with mood choices and tags"></div></div>
+    </div>
+    <div class="feature">
+      <div class="feature-text"><h3>Pick what matters to you</h3><p>We'll put these first on Home and in your suggested questions.</p></div>
+      <div class="shots narrow"><div class="window"><div class="bar" aria-hidden="true"><i></i><i></i><i></i></div><img src="images/interests.jpg" width="1400" height="1351" loading="lazy" alt="Taravi step asking which life areas you are most interested in"></div></div>
     </div>
 
-    <div class="phones">
-      <div class="phone"><div class="screen"><img src="images/my-life.png" width="540" height="1170" loading="lazy" alt="Taravi My Life screen showing today's overall support and strongest life areas"></div></div>
-      <div class="phone"><div class="screen"><img src="images/calendar.png" width="540" height="1170" loading="lazy" alt="Taravi Calendar screen showing a month view with festival, muhurta and day-rating markers"></div></div>
-      <!-- Compatibility screenshot goes here once supplied:
-      <div class="phone"><div class="screen"><img src="images/compatibility.png" width="540" height="1170" loading="lazy" alt="Taravi Compatibility screen comparing two birth charts"></div></div>
-      -->
+    <div class="grid">
+      <article class="card"><svg class="ico" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 3a7 7 0 0 0 0 14 7 7 0 0 0 0-14zM3 21h18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><h3>Morning card</h3><p>A short line for your day, every morning on Home.</p></article>
+      <article class="card"><svg class="ico" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><h3>Evening card</h3><p>After 6 pm, a gentle prompt to end your day.</p></article>
+      <article class="card"><svg class="ico" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M9 6a5 5 0 1 0 0 12 5 5 0 0 0 0-12zM15 6a5 5 0 1 0 0 12 5 5 0 0 0 0-12z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><h3>Compatibility</h3><p>Compare two birth charts and see how they fit.</p></article>
+      <article class="card"><svg class="ico" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 3c-3 4-3 8 0 18M12 3c3 4 3 8 0 18M4 12h16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><h3>Calm minute</h3><p>A 60-second guided breathing pause.</p></article>
+    </div>
     </div>
   </div>
 </section>
