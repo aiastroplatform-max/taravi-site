@@ -15,6 +15,7 @@ main section{padding-top:88px;padding-bottom:88px}
 .hero{padding:96px 0 88px;border-bottom:3px solid var(--gold)}
 .hero-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:48px;align-items:center}
 .intro{font-size:1.2rem;color:var(--muted);max-width:34em}
+.subline{font-size:1.25rem;font-weight:600;margin:.2em 0 .6em}
 .cta-block{margin-top:28px}
 .btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:700;padding:16px 36px;border-radius:999px;min-height:48px}
 .btn:hover,.btn:focus-visible{background:var(--ink);outline:3px solid var(--gold);outline-offset:3px}
