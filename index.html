@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" href="images/logo-mark-hero.png">
-<link rel="stylesheet" href="style.css?v=3">
+<link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
 <header class="hero">
@@ -55,35 +55,49 @@
 
 <section class="band" id="features">
   <div class="wrap">
-    <h2>What you can do</h2>
-    <div class="feature">
-      <div class="feature-text"><h3>Ask</h3><p>Ask about your life in your own words and get a clear, kind answer from your chart.</p></div>
-      <div class="shots two"><div class="window"><div class="bar" aria-hidden="true"><i></i><i></i><i></i></div><img src="images/ask.jpg" width="1076" height="880" loading="lazy" alt="Taravi Ask screen answering a question about marriage"></div><div class="window"><div class="bar" aria-hidden="true"><i></i><i></i><i></i></div><img src="images/ask-start.jpg" width="1374" height="1586" loading="lazy" alt="Taravi Ask panel with suggested questions to try"></div></div>
+    <h2 class="ft-head">What you can do</h2>
+    <p class="ft-sub">Tap a feature to see it.</p>
+    <div class="ft-tabs" role="tablist" aria-label="Features" hidden>
+      <button role="tab" id="tab-ask" aria-controls="panel-ask" aria-selected="true" tabindex="0">Ask</button>
+      <button role="tab" id="tab-my-life" aria-controls="panel-my-life" aria-selected="false" tabindex="-1">My Life</button>
+      <button role="tab" id="tab-calendar" aria-controls="panel-calendar" aria-selected="false" tabindex="-1">Calendar</button>
+      <!-- unhide when images/compatibility.png is added -->
+      <button role="tab" id="tab-compatibility" aria-controls="panel-compatibility" aria-selected="false" tabindex="-1" hidden>Compatibility</button>
+      <button role="tab" id="tab-morning-card" aria-controls="panel-morning-card" aria-selected="false" tabindex="-1">Morning card</button>
+      <button role="tab" id="tab-journal" aria-controls="panel-journal" aria-selected="false" tabindex="-1">Journal</button>
     </div>
-    <div class="feature flip">
-      <div class="feature-text"><h3>My Life</h3><p>See how each area of your life is going today, this week and this year, with a simple rating.</p></div>
-      <div class="shots"><div class="window"><div class="bar" aria-hidden="true"><i></i><i></i><i></i></div><img src="images/my-life.jpg" width="1400" height="1416" loading="lazy" alt="Taravi My Life screen showing today's overall support and strongest life areas"></div></div>
+    <div class="ft-panels">
+      <div class="ft-panel" role="tabpanel" id="panel-ask" aria-labelledby="tab-ask" tabindex="0">
+        <div class="ft-text"><h3>Ask anything about your life</h3><p>Ask in your own words and get a clear, kind answer from your chart.</p><span class="chip">What does my chart say about marriage?</span></div>
+        <div class="ft-frame"><div class="bar" aria-hidden="true"><i></i><i></i><i></i></div><div class="ft-scroll"><img src="images/ask.jpg" width="1076" height="880" alt="Taravi Ask screen answering a question about marriage"></div></div>
+      </div>
+      <div class="ft-panel" role="tabpanel" id="panel-my-life" aria-labelledby="tab-my-life" tabindex="0">
+        <div class="ft-text"><h3>See how each area of life is going</h3><p>Today, this week and this year, each with a simple rating. Every rating has a “Why?” you can open.</p></div>
+        <div class="ft-frame"><div class="bar" aria-hidden="true"><i></i><i></i><i></i></div><div class="ft-scroll"><img src="images/my-life.jpg" width="1400" height="1416" loading="lazy" alt="Taravi My Life screen showing today's overall support and strongest life areas"></div></div>
+      </div>
+      <div class="ft-panel" role="tabpanel" id="panel-calendar" aria-labelledby="tab-calendar" tabindex="0">
+        <div class="ft-text"><h3>Plan around supportive days</h3><p>A month view that shows which days look supportive.</p>
+          <ul class="legend"><li><span class="sw strong"></span>Strong</li><li><span class="sw support"></span>Supportive</li><li><span class="sw quiet"></span>Quieter</li></ul></div>
+        <div class="ft-frame"><div class="bar" aria-hidden="true"><i></i><i></i><i></i></div><div class="ft-scroll"><img src="images/calendar.jpg" width="1290" height="1166" loading="lazy" alt="Taravi Calendar showing a month view with day ratings and markers"></div></div>
+      </div>
+      <!-- unhide when images/compatibility.png is added -->
+      <div class="ft-panel" role="tabpanel" id="panel-compatibility" aria-labelledby="tab-compatibility" tabindex="0" hidden data-pending>
+        <div class="ft-text"><h3>See how two people fit</h3><p>Compare two birth charts and see how they fit.</p></div>
+        <div class="ft-frame"><div class="bar" aria-hidden="true"><i></i><i></i><i></i></div><div class="ft-scroll"><img src="images/compatibility.png" loading="lazy" alt="Taravi Compatibility screen comparing two birth charts"></div></div>
+      </div>
+      <div class="ft-panel" role="tabpanel" id="panel-morning-card" aria-labelledby="tab-morning-card" tabindex="0">
+        <div class="ft-text"><h3>Start your day with one clear line</h3><p>A short line for your day, every morning on Home.</p></div>
+        <div class="ft-phone"><img src="images/morning-card.jpg" width="675" height="1200" loading="lazy" alt="Taravi morning card: one line for your day and one small step"></div>
+      </div>
+      <div class="ft-panel" role="tabpanel" id="panel-journal" aria-labelledby="tab-journal" tabindex="0">
+        <div class="ft-text"><h3>Note how you feel, privately</h3><p>Note how you feel and what went well. Entries stay on your device.</p></div>
+        <div class="ft-frame"><div class="bar" aria-hidden="true"><i></i><i></i><i></i></div><div class="ft-scroll"><img src="images/journal.jpg" width="1400" height="950" loading="lazy" alt="Taravi Journal daily check-in with mood choices and tags"></div></div>
+      </div>
     </div>
-    <div class="feature">
-      <div class="feature-text"><h3>Calendar</h3><p>A month view that shows which days look supportive.</p>
-        <ul class="legend"><li><span class="sw strong"></span>Strong</li><li><span class="sw support"></span>Supportive</li><li><span class="sw quiet"></span>Quieter</li></ul></div>
-      <div class="shots"><div class="window"><div class="bar" aria-hidden="true"><i></i><i></i><i></i></div><img src="images/calendar.jpg" width="1290" height="1166" loading="lazy" alt="Taravi Calendar showing an October month view with day ratings and markers"></div></div>
-    </div>
-    <div class="feature flip">
-      <div class="feature-text"><h3>Journal check-in (saved on your device)</h3><p>Note how you feel and what went well. Entries stay in your browser.</p></div>
-      <div class="shots"><div class="window"><div class="bar" aria-hidden="true"><i></i><i></i><i></i></div><img src="images/journal.jpg" width="1400" height="950" loading="lazy" alt="Taravi Journal daily check-in with mood choices and tags"></div></div>
-    </div>
-    <div class="feature">
-      <div class="feature-text"><h3>Pick what matters to you</h3><p>We'll put these first on Home and in your suggested questions.</p></div>
-      <div class="shots narrow"><div class="window"><div class="bar" aria-hidden="true"><i></i><i></i><i></i></div><img src="images/interests.jpg" width="1400" height="1351" loading="lazy" alt="Taravi step asking which life areas you are most interested in"></div></div>
-    </div>
-
-    <div class="grid">
-      <article class="card card-wide"><div class="card-text"><svg class="ico" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 3a7 7 0 0 0 0 14 7 7 0 0 0 0-14zM3 21h18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><h3>Morning card</h3><p>A short line for your day, every morning on Home.</p></div><div class="phone"><img src="images/morning-card.jpg" width="675" height="1200" loading="lazy" alt="Taravi morning card: one line for your day and one small step"></div></article>
-      <article class="card"><svg class="ico" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><h3>Evening card</h3><p>After 6 pm, a gentle prompt to end your day.</p></article>
-      <article class="card"><svg class="ico" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M9 6a5 5 0 1 0 0 12 5 5 0 0 0 0-12zM15 6a5 5 0 1 0 0 12 5 5 0 0 0 0-12z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><h3>Compatibility</h3><p>Compare two birth charts and see how they fit.</p></article>
-      <article class="card"><svg class="ico" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 3c-3 4-3 8 0 18M12 3c3 4 3 8 0 18M4 12h16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><h3>Calm minute</h3><p>A 60-second guided breathing pause.</p></article>
-    </div>
+    <div class="ft-cards">
+      <article class="ft-card"><img class="ft-thumb" src="images/interests.jpg" width="1400" height="1351" loading="lazy" alt="Taravi step asking which life areas matter to you"><div><h3>Pick what matters to you</h3><p>We'll put these first on Home and in your suggested questions.</p></div></article>
+      <article class="ft-card"><svg class="ico" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>Evening card</h3><p>After 6 pm, a gentle prompt to end your day and update your journal.</p></div></article>
+      <article class="ft-card"><svg class="ico" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 3l2.6 5.6 6.1.7-4.5 4.2 1.2 6L12 16.5 6.6 19.5l1.2-6-4.5-4.2 6.1-.7z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg><div><h3>Calm minute</h3><p>A 60-second guided breathing pause.</p></div></article>
     </div>
   </div>
 </section>
@@ -123,5 +137,6 @@
     <p class="note">Taravi gives guidance, not medical or legal advice. It does not predict illness, death or accidents.</p>
   </div>
 </footer>
+<script src="tabs.js"></script>
 </body>
 </html>
