@@ -127,6 +127,7 @@ main section{padding-top:88px;padding-bottom:88px}
 .ft-phone img{display:block;width:100%;height:auto}
 #features:not(.js) .ft-panel:not(#panel-ask){grid-template-columns:1fr;margin-bottom:16px}
 #features:not(.js) .ft-panel:not(#panel-ask) .ft-frame,#features:not(.js) .ft-panel:not(#panel-ask) .ft-phone{display:none}
+.ft-panel .ft-cards{grid-column:1/-1}
 .ft-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .ft-card{display:flex;gap:14px;align-items:flex-start;background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:20px}
 .ft-card h3{color:var(--teal);font-size:1.35rem;margin-bottom:.25em}
