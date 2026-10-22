@@ -60,9 +60,8 @@
       <button role="tab" id="tab-ask" aria-controls="panel-ask" aria-selected="true" tabindex="0">Ask</button>
       <button role="tab" id="tab-my-life" aria-controls="panel-my-life" aria-selected="false" tabindex="-1">My Life</button>
       <button role="tab" id="tab-calendar" aria-controls="panel-calendar" aria-selected="false" tabindex="-1">Calendar</button>
-      <!-- unhide when images/compatibility.png is added -->
-      <button role="tab" id="tab-compatibility" aria-controls="panel-compatibility" aria-selected="false" tabindex="-1" hidden>Compatibility</button>
       <button role="tab" id="tab-morning-card" aria-controls="panel-morning-card" aria-selected="false" tabindex="-1">Morning card</button>
+      <button role="tab" id="tab-compatibility" aria-controls="panel-compatibility" aria-selected="false" tabindex="-1">Compatibility</button>
       <button role="tab" id="tab-journal" aria-controls="panel-journal" aria-selected="false" tabindex="-1">Journal</button>
     </div>
     <div class="ft-panels">
@@ -79,11 +78,6 @@
           <ul class="legend"><li><span class="sw strong"></span>Strong</li><li><span class="sw support"></span>Supportive</li><li><span class="sw quiet"></span>Quieter</li></ul></div>
         <div class="ft-frame"><div class="bar" aria-hidden="true"><i></i><i></i><i></i></div><div class="ft-scroll"><img src="images/calendar.jpg" width="1290" height="1166" loading="lazy" alt="Taravi Calendar showing a month view with day ratings and markers"></div></div>
       </div>
-      <!-- unhide when images/compatibility.png is added -->
-      <div class="ft-panel" role="tabpanel" id="panel-compatibility" aria-labelledby="tab-compatibility" tabindex="0" hidden data-pending>
-        <div class="ft-text"><h3>See how two people fit</h3><p>Compare two birth charts and see how they fit.</p></div>
-        <div class="ft-frame"><div class="bar" aria-hidden="true"><i></i><i></i><i></i></div><div class="ft-scroll"><img src="images/compatibility.png" loading="lazy" alt="Taravi Compatibility screen comparing two birth charts"></div></div>
-      </div>
       <div class="ft-panel" role="tabpanel" id="panel-morning-card" aria-labelledby="tab-morning-card" tabindex="0">
         <div class="ft-text"><h3>Start your day with one clear line</h3><p>A short line for your day, every morning on Home.</p></div>
         <div class="ft-phone"><img src="images/morning-card.jpg" width="675" height="1200" loading="lazy" alt="Taravi morning card: one line for your day and one small step"></div>
@@ -92,6 +86,10 @@
         <article class="ft-card"><svg class="ico" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>Evening card</h3><p>After 6 pm, a gentle prompt to end your day and update your journal.</p></div></article>
         <article class="ft-card"><svg class="ico" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 3l2.6 5.6 6.1.7-4.5 4.2 1.2 6L12 16.5 6.6 19.5l1.2-6-4.5-4.2 6.1-.7z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg><div><h3>Calm minute</h3><p>A 60-second guided breathing pause.</p></div></article>
       </div>
+      </div>
+      <div class="ft-panel" role="tabpanel" id="panel-compatibility" aria-labelledby="tab-compatibility" tabindex="0">
+        <div class="ft-text"><h3>See how two people fit</h3><p>Compare two birth charts and see how they fit.</p></div>
+        <div class="ft-frame"><div class="bar" aria-hidden="true"><i></i><i></i><i></i></div><div class="ft-scroll"><img src="images/compatibility.jpg" width="729" height="608" loading="lazy" alt="Taravi Compatibility screen comparing two birth charts"></div></div>
       </div>
       <div class="ft-panel" role="tabpanel" id="panel-journal" aria-labelledby="tab-journal" tabindex="0">
         <div class="ft-text"><h3>Note how you feel, privately</h3><p>Note how you feel and what went well. Entries stay on your device.</p></div>
