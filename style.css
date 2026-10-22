@@ -78,3 +78,8 @@ main section{padding-top:88px;padding-bottom:88px}
 .phone{flex:0 0 auto;width:220px;max-width:100%;border-radius:28px;overflow:hidden;border:1px solid var(--line);box-shadow:0 8px 24px rgba(0,0,0,.12);line-height:0}
 .phone img{display:block;width:100%;height:auto}
 @media (max-width:560px){.card-wide{flex-direction:column;align-items:flex-start}.phone{align-self:center;width:200px}}
+.brand{font-weight:500}
+.hero .brand .mark{height:40px;width:auto}
+.cover{display:flex;flex-direction:column;align-items:center;margin:8px 0 28px}
+.hero-mark{width:clamp(200px,28vw,340px);height:auto;max-width:100%}
+.wordmark{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;font-style:normal;color:var(--teal);font-size:clamp(3.6rem,10vw,6.5rem);line-height:1;letter-spacing:.02em;margin:.1em 0 0}
