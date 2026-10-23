@@ -146,3 +146,7 @@ main section{padding-top:88px;padding-bottom:88px}
 .plan ul.checks{list-style:none;padding-left:0}
 .plan ul.checks li{position:relative;padding-left:1.7em;margin:.45em 0}
 .plan ul.checks li::before{content:"\2713";position:absolute;left:0;color:var(--teal);font-weight:700}
+.soon-label{font-size:.8rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin:4px 0 8px}
+.soon-tags{display:flex;flex-wrap:wrap;gap:8px}
+.soon-tag{font-size:.82rem;color:var(--purple);background:transparent;border:1px dashed var(--purple);border-radius:999px;padding:4px 10px}
+.plans-note{max-width:820px;text-align:center;font-size:.9rem;color:var(--muted);margin:18px 0 0}
